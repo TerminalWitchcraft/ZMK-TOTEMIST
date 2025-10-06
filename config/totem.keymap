@@ -18,10 +18,34 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+        combo_fslash {
+            bindings = <&div_mul>;
+            key-positions = <16 7>;
+        };
+
+        combo_bslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <7 18>;
+        };
+
+        r_brack {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 12>;
+        };
+
+        r_brack_l {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 17>;
+        };
+
+        a_brack {
+            bindings = <&angle_less>;
+            key-positions = <24 23>;
+        };
+
+        a_brack_l {
+            bindings = <&angle_great>;
+            key-positions = <27 28>;
         };
     };
 
@@ -85,6 +109,33 @@
             #binding-cells = <0>;
             tapping-term-ms = <280>;
             bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
+        };
+
+        div_mul: div_mul {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DIV_MUL";
+            bindings = <&kp SLASH>, <&kp ASTERISK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        angle_less: angle_less {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ANGLE_LESS";
+            bindings = <&kp LESS_THAN>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        angle_great: angle_great {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ANGLE_GREAT";
+            bindings = <&kp GREATER_THAN>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
