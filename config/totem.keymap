@@ -47,6 +47,31 @@
             bindings = <&angle_great>;
             key-positions = <27 28>;
         };
+
+        c_brack {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <2 3>;
+        };
+
+        c_brack_l {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <6 7>;
+        };
+
+        equality {
+            bindings = <&equal_not>;
+            key-positions = <7 8>;
+        };
+
+        combo_minus {
+            bindings = <&minus_plus>;
+            key-positions = <17 18>;
+        };
+
+        combo_underscore {
+            bindings = <&under_super>;
+            key-positions = <28 29>;
+        };
     };
 
     macros {
@@ -133,6 +158,33 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ANGLE_GREAT";
             bindings = <&kp GREATER_THAN>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        equal_not: equal_not {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_NOT";
+            bindings = <&kp EQUAL>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        minus_plus: minus_plus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_PLUS";
+            bindings = <&kp MINUS>, <&kp PLUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        under_super: under_super {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDER_SUPER";
+            bindings = <&kp UNDERSCORE>, <&kp CARET>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
