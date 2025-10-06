@@ -76,10 +76,10 @@
 
         NAV {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp LC(X)       &kp LC(U)     &kp LC(D)       &kp LC(P)        &trans    &trans  &trans             &trans         &trans         &trans
+        &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &sk RIGHT_GUI  &sk RIGHT_SHIFT
+&trans  &kp LC(A)       &kp PAGE_UP   &kp PAGE_DOWN   &kp LC(N)        &trans    &trans  &trans             &trans         &trans         &trans           &trans
+                                      &trans          &trans           &trans    &trans  &trans             &trans
             >;
         };
 
