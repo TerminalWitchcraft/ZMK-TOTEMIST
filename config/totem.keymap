@@ -72,6 +72,21 @@
             bindings = <&under_super>;
             key-positions = <28 29>;
         };
+
+        combo_at {
+            bindings = <&at_percent>;
+            key-positions = <12 11>;
+        };
+
+        combo_and {
+            bindings = <&and_or>;
+            key-positions = <1 2>;
+        };
+
+        combo_hash {
+            bindings = <&hash_dollar>;
+            key-positions = <22 23>;
+        };
     };
 
     macros {
@@ -185,6 +200,33 @@
             compatible = "zmk,behavior-mod-morph";
             label = "UNDER_SUPER";
             bindings = <&kp UNDERSCORE>, <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        at_percent: at_percent {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AT_PERCENT";
+            bindings = <&kp AT>, <&kp PERCENT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        and_or: and_or {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AND_OR";
+            bindings = <&kp AMPERSAND>, <&kp PIPE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hash_dollar: hash_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HASH_DOLLAR";
+            bindings = <&kp HASH>, <&kp DOLLAR>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
