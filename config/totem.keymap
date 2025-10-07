@@ -237,9 +237,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        custom_hold_tap: custom_hold_tap {
+        hold_tap: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "CUSTOM_HOLD_TAP";
+            label = "HOLD_TAP";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -299,10 +299,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp W  &kp L             &kp Y                 &kp P                     &kp B        &kp Z        &kp F                         &kp O                   &kp U                   &double_quote_single
-       &kp C  &hrm_left LGUI R  &hrm_left LEFT_ALT S  &hrm_left LEFT_CONTROL T  &kp G        &kp M        &hrm_right RIGHT_CONTROL N    &hrm_right RIGHT_ALT E  &hrm_right RIGHT_GUI I  &mt RGUI A
-&mo 3  &kp Q  &kp J             &kp V                 &kp D                     &kp K        &kp X        &kp H                         &dot_colon              &comma_semi             &ques_exclaim         &mo 3
-                                &kp ESCAPE            &custom_hold_tap 2 SPACE  &lt 0 TAB    &caps_shift  &custom_hold_tap 1 BACKSPACE  &kp ENTER
+       &kp W  &kp L             &kp Y                 &kp P                     &kp B        &kp Z        &kp F                       &kp O                   &kp U                   &double_quote_single
+       &kp C  &hrm_left LGUI R  &hrm_left LEFT_ALT S  &hrm_left LEFT_CONTROL T  &kp G        &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_GUI I  &mt RGUI A
+&mo 3  &kp Q  &kp J             &kp V                 &kp D                     &kp K        &kp X        &kp H                       &dot_colon              &comma_semi             &ques_exclaim         &mo 3
+                                &kp ESCAPE            &hold_tap 2 SPACE         &lt 0 TAB    &caps_shift  &hold_tap 1 BACKSPACE       &kp ENTER
             >;
         };
 
