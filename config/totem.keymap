@@ -299,10 +299,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp W  &kp L             &kp Y                 &kp P                     &kp B        &kp Z        &kp F                       &kp O                   &kp U                   &double_quote_single
-       &kp C  &hrm_left LGUI R  &hrm_left LEFT_ALT S  &hrm_left LEFT_CONTROL T  &kp G        &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_ALT E  &hrm_right RIGHT_GUI I  &mt RGUI A
-&mo 3  &kp Q  &kp J             &kp V                 &kp D                     &kp K        &kp X        &kp H                       &dot_colon              &comma_semi             &ques_exclaim         &mo 3
-                                &kp ESCAPE            &hold_tap 2 SPACE         &lt 0 TAB    &caps_shift  &hold_tap 1 BACKSPACE       &kp ENTER
+       &kp W  &kp L                 &kp Y                 &kp P                     &kp B        &kp Z        &kp F                       &kp O                   &kp U                   &double_quote_single
+       &kp C  &hrm_left LEFT_ALT R  &hrm_left LEFT_GUI S  &hrm_left LEFT_CONTROL T  &kp G        &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_GUI E  &hrm_right RIGHT_ALT I  &mt RGUI A
+&mo 3  &kp Q  &kp J                 &kp V                 &kp D                     &kp K        &kp X        &kp H                       &dot_colon              &comma_semi             &ques_exclaim         &mo 3
+                                    &kp ESCAPE            &hold_tap 2 SPACE         &lt 0 TAB    &caps_shift  &hold_tap 1 BACKSPACE       &kp ENTER
             >;
         };
 
@@ -313,7 +313,7 @@
         NAV {
             bindings = <
         &kp LC(X)       &kp LC(U)     &kp LC(D)       &kp LC(P)        &trans    &trans  &trans             &trans         &trans         &trans
-        &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &sk RIGHT_CONTROL  &sk RIGHT_ALT  &sk RIGHT_GUI  &sk RIGHT_SHIFT
+        &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &sk RIGHT_CONTROL  &sk RIGHT_GUI  &sk RIGHT_ALT  &sk RIGHT_SHIFT
 &trans  &kp LC(A)       &kp PAGE_UP   &kp PAGE_DOWN   &kp LC(N)        &trans    &trans  &trans             &trans         &trans         &trans           &trans
                                       &trans          &trans           &trans    &trans  &trans             &trans
             >;
@@ -322,7 +322,7 @@
         NUM {
             bindings = <
         &trans          &trans        &trans        &trans            &trans    &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
-        &sk LEFT_SHIFT  &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_CONTROL  &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+        &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_CONTROL  &trans    &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
 &trans  &trans          &trans        &trans        &trans            &trans    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
                                       &trans        &trans            &trans    &trans           &trans           &trans
             >;
@@ -331,7 +331,7 @@
         SYS {
             bindings = <
         &kp DEL         &kp END         &kp HOME         &kp INSERT        &bt BT_SEL 0    &trans   &kp F7  &kp F8  &kp F9  &kp F13
-        &sk LEFT_SHIFT  &sk LEFT_GUI    &sk LEFT_ALT     &sk LEFT_CONTROL  &bt BT_SEL 1    &kp F10  &kp F4  &kp F5  &kp F6  &kp F12
+        &sk LEFT_SHIFT  &sk LEFT_ALT    &sk LEFT_GUI     &sk LEFT_CONTROL  &bt BT_SEL 1    &kp F10  &kp F4  &kp F5  &kp F6  &kp F12
 &trans  &kp KP_NUMLOCK  &bt BT_CLR_ALL  &kp PAUSE_BREAK  &kp PRINTSCREEN   &bt BT_SEL 2    &trans   &kp F1  &kp F2  &kp F3  &kp F11  &trans
                                         &trans           &trans            &trans          &trans   &trans  &trans
             >;
