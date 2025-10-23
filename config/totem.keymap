@@ -299,10 +299,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp W  &kp L                 &kp Y                 &kp P                     &kp B        &kp Z        &kp F                       &kp O                   &kp U                   &double_quote_single
-       &kp C  &hrm_left LEFT_ALT R  &hrm_left LEFT_GUI S  &hrm_left LEFT_CONTROL T  &kp G        &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_GUI E  &hrm_right RIGHT_ALT I  &kp A
-&mo 3  &kp Q  &kp J                 &kp V                 &kp D                     &kp K        &kp X        &kp H                       &dot_colon              &comma_semi             &ques_exclaim         &mo 3
-                                    &kp ESCAPE            &hold_tap 2 SPACE         &lt 0 TAB    &caps_shift  &hold_tap 1 BACKSPACE       &kp ENTER
+              &kp W  &kp L                 &kp Y                 &kp P                     &kp B        &kp Z        &kp F                       &kp O                   &kp U                   &double_quote_single
+              &kp C  &hrm_left LEFT_ALT R  &hrm_left LEFT_GUI S  &hrm_left LEFT_CONTROL T  &kp G        &kp M        &hrm_right RIGHT_CONTROL N  &hrm_right RIGHT_GUI E  &hrm_right RIGHT_ALT I  &kp A
+&lt 3 DELETE  &kp Q  &kp J                 &kp V                 &kp D                     &kp K        &kp X        &kp H                       &comma_semi             &dot_colon              &ques_exclaim         &lt 3 INS
+                                           &kp ESCAPE            &hold_tap 2 SPACE         &lt 0 TAB    &caps_shift  &hold_tap 1 BACKSPACE       &kp ENTER
             >;
         };
 
