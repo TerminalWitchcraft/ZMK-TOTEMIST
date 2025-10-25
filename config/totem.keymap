@@ -20,12 +20,12 @@
 
         combo_fslash {
             bindings = <&div_mul>;
-            key-positions = <16 7>;
+            key-positions = <17 27>;
         };
 
         combo_bslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <7 18>;
+            key-positions = <29 17>;
         };
 
         r_brack {
@@ -90,7 +90,7 @@
 
         grave_tidle {
             bindings = <&kp GRAVE>;
-            key-positions = <2 13>;
+            key-positions = <12 24>;
         };
     };
 
